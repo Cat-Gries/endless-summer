@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<link href="https://fonts.googleapis.com/css?family=Poiret+One|Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 <link rel="shortcut icon" href="img/logo-favcon.jpg" type="image/x-icon">
 <title>Endless Summer</title>
 </head>
@@ -26,8 +26,8 @@ HEADER
 	</nav>
 	<div id="bg-img">
 		<div class="wrapper">
-			<h1><a href="#"><img src="img/logo.png" alt="Endless Summer Logo"></a></h1>
 			<div class="col-2-3 nf">
+				<h1><a href="#"><img src="img/logo.png" alt="Endless Summer"></a></h1>
 				<p>Our mission is to cultivate a love and respect for the ocean by building confidence, developing character and inspiring stoke through safety, fun and learning.</p>
 			</div>
 		</div>
@@ -37,19 +37,24 @@ HEADER
 NEWSELTTER
 ============================================================-->
 <section class="wrapper" id="newsletter">
-	<form>
-		<header>
-			<h2>Get Our Newsletter</h2>
-		</header>
-		
-		<label for="newsletter-name">Name</label>
-		<input type="text" name="Name" id="newsletter-name">
-		
-		<label for="newsletter-email">Email</label>
-		<input type="email" name="Email" id="newsletter-email">
-		
-		<p><a href="#">Submit</a></p>
-	</form>
+	<div class="row">
+		<div class="col-1-4">
+			<header>
+				<h2>Get Our Newsletter</h2>
+			</header>
+		</div>
+		<div class="col-3-4">
+			<form>
+				<label for="newsletter-name">Name</label>
+				<input type="text" name="Name" id="newsletter-name" placeholder="Name">
+
+				<label for="newsletter-email">Email</label>
+				<input type="email" name="Email" id="newsletter-email" placeholder="Email">
+
+				<p><a href="#">Submit</a></p>
+			</form>
+		</div>
+	</div>
 </section>
 <!--===========================================================
 PACKAGES
@@ -59,10 +64,12 @@ PACKAGES
 		<h2>Packages</h2>
 	</header>
 	<section class="col-2-3 nf">
-		<div class="row">
-			<div class="col-4-10" id="deluxe-package-img">
+		<div class="row flex">
+			<div class="col-4-10" id="package-five-day">
 				<header>
+					<div></div>
 					<h3>Deluxe Package</h3>
+					<div></div>
 				</header>
 				<div id="shape">
 					<p>Most Popular</p>
@@ -72,102 +79,110 @@ PACKAGES
 				<h4>Five Day Plan</h4>
 				<p>4 Sessions + 2.5 Hour Private Lesson</p>
 				<div class="blk-line"></div>
-				<p><span>$</span>320</p>
+				<p>$320</p>
 				<p>This course is aimed at people who really want to get into surfing as each lesson is different and the course is packed with content.</p>
 				<ul>
-					<li>- For all ages</li>
-					<li>- Wide range of techniques taught</li>
-					<li>- Ride different surfboards and introduce hardboards</li>
+					<li>For all ages</li>
+					<li>Wide range of techniques taught</li>
+					<li>Ride different surfboards and introduce hardboards</li>
 				</ul>
 				<p><a href="#">Buy</a></p>
 			</div>
 		</div>
 	</section>
-	<div class="row">
+	<div class="row flex">
 		<section class="col-1-2">
-			<div class="row">
-				<div class="col-1-2" id="learn-to-surf-adventure">
+			<div class="row flex">
+				<div class="col-1-2" id="package-one-day">
 					<header>
+						<div></div>
 						<h3>Learn to Surf Adventure</h3>
+						<div></div>
 					</header>
 				</div>
 				<div class="col-1-2">
 					<h4>1/2 Day Plan</h4>
 					<p>1 Session</p>
 					<div class="blk-line"></div>
-					<p><span>$</span>65</p>
+					<p>$65</p>
 					<p>This course is a complete introduction to surfing.</p>
 					<ul>
-						<li>- We will experiment with different surfboards</li>
-						<li>- We will go over the necessary steps for surfing</li>
+						<li>We will experiment with different surfboards</li>
+						<li>We will go over the necessary steps for surfing</li>
 					</ul>
 					<p><a href="#">Buy</a></p>
 				</div>
 			</div>
 		</section>
 		<section class="col-1-2">
-			<div class="row">
-				<div class="col-1-2" id="progressive-lesson">
+			<div class="row flex">
+				<div class="col-1-2" id="package-two-day">
 					<header>
+						<div></div>
 						<h3>Progressive Lesson</h3>
+						<div></div>
 					</header>
 				</div>
 				<div class="col-1-2">
 					<h4>Two Day Plan</h4>
 					<p>2 Session</p>
 					<div class="blk-line"></div>
-					<p><span>$</span>115</p>
+					<p>$115</p>
 					<p>This course is suited for people looking to progress their surfing very quickly.</p>
 					<ul>
-						<li>- We aim to improve stance</li>
-						<li>- Pop up technique</li>
-						<li>- Introduction to paddling</li>
+						<li>We aim to improve stance</li>
+						<li>Pop up technique</li>
+						<li>Introduction to paddling</li>
 					</ul>
 					<p><a href="#">Buy</a></p>
 				</div>
 			</div>
 		</section>
 	</div>
-	<div class="row">
+	<div class="row flex">
 		<section class="col-1-2">
-			<div class="row">
-				<div class="col-1-2" id="ultimate-wave-rider">
+			<div class="row flex">
+				<div class="col-1-2" id="package-three-day">
 					<header>
+						<div></div>
 						<h3>Ultimate Wave Rider</h3>
+						<div></div>
 					</header>
 				</div>
 				<div class="col-1-2">
 					<h4>Three Day Plan</h4>
 					<p>3 Sessions</p>
 					<div class="blk-line"></div>
-					<p><span>$</span>155</p>
+					<p>$155</p>
 					<p>In this course we will take you to different surf locations</p>
 					<ul>
-						<li>- Improve Paddling, Pop up technique, and stance</li>
-						<li>- Slowing and speeding up</li>
-						<li>- Frontside and Backside turn</li>
+						<li>Improve Paddling, Pop up technique, and stance</li>
+						<li>Slowing and speeding up</li>
+						<li>Frontside and Backside turn</li>
 					</ul>
 					<p><a href="#">Buy</a></p>
 				</div>
 			</div>
 		</section>
 		<section class="col-1-2">
-			<div class="row">
-				<div class="col-1-2" id="epic-surf-experience">
+			<div class="row flex">
+				<div class="col-1-2" id="package-four-day">
 					<header>
+						<div></div>
 						<h3>Epic Surf Experience</h3>
+						<div></div>
 					</header>
 				</div>
 				<div class="col-1-2">
 					<h4>Four Day Plan</h4>
 					<p>4 Sessions</p>
 					<div class="blk-line"></div>
-					<p><span>$</span>185</p>
+					<p>$185</p>
 					<p>In this course ee will t intrroduce more techniques.</p>
 					<ul>
-						<li>- Introduction to S-turns</li>
-						<li>- Introduction to surfing with the flow</li>
-						<li>- Catch unbroken waves</li>
+						<li>Introduction to S-turns</li>
+						<li>Introduction to surfing with the flow</li>
+						<li>Catch unbroken waves</li>
 					</ul>
 					<p><a href="#">Buy</a></p>
 				</div>
@@ -180,11 +195,11 @@ SERVICES
 ============================================================-->
 <section class="bg-blue" id="services">
 	<div class="wrapper">
-		<header>
-			<h2>Services</h2>
-		</header>
 		<div class="col-2-3 nf">
-			<p>Come on a learn to surf journey of a lifetime in Manu Bay as we set off on a half day adventure. Sit back and relax after we pick you up from your accommodation and begin the search. All package deals pick you up from your location and drop you off at the surf school.  Get ready for your surf adventure by clicking <a href="#">here</a>.</p>
+			<header>
+				<h2>Services</h2>
+			</header>
+			<p>Come on a learn to surf journey of a lifetime in Manu Bay as we set off on a half day adventure. Sit back and relax after we pick you up from your accommodation and begin the search. All package deals pick you up from your location and drop you off at the surf school.  Get ready for your surf adventure by clicking <a href="http://www.theinertia.com/surf/8-awesome-ways-to-prepare-for-a-surf-trip/" target="_blank">here</a>.</p>
 		</div>
 		<div class="row">
 			<div class="col-1-5">
@@ -213,37 +228,28 @@ SERVICES
 <!--===========================================================
 GALLERY
 ============================================================-->
-<figure>
+<div class="row" id="gallery">
 	<div class="col-1-6">
-		<img src="img/gallery-img-one.jpg" alt="">
 	</div>
 	<div class="col-1-6">
-		<img src="img/gallery-img-two.jpg" alt="">
 	</div>
 	<div class="col-1-6">
-		<img src="img/gallery-img-three.jpg" alt="">
 	</div>
 	<div class="col-1-6">
-		<img src="img/gallery-img-four.jpg" alt="">
 	</div>
 	<div class="col-1-6">
-		<img src="img/gallery-img-five.jpg" alt="">
 	</div>
 	<div class="col-1-6">
-		<img src="img/gallery-img-six.jpg" alt="">
 	</div>
-	<figcaption>
-		<p>Images of Endless Summer that showcase their surfing and beaches.</p>
-	</figcaption>
-</figure>
+</div>
 <!--===========================================================
 ABOUT
 ============================================================-->
 <section class="wrapper" id="about">
-	<header>
-		<h2>About</h2>
-	</header>
 	<div class="col-2-3 nf">
+		<header>
+			<h2>About</h2>
+		</header>
 		<p>As a mobile surf school we are dedicated to finding the best, fun and safest waves daily. Our lessons are specifically designed to teach you to surf at your own pace in a relaxed environment to build further self-confidence.</p>
 	</div>
 	<div class="row">
@@ -280,32 +286,32 @@ INSTRUCTORS
 ============================================================-->
 <section class="bg-blue" id="instructors">
 	<div class="wrapper">
-		<header>
-			<h2>Instructors</h2>
-		</header>
 		<div class="col-2-3 nf">
+			<header>
+				<h2>Instructors</h2>
+			</header>
 			<p>We are the only Manu Bay surf school to have surf school permits to teach personal private lessons &amp; group lessons in both Manu &amp; Whale Bay.</p>
 		</div>
-		<div class="row">
+		<div class="row flex">
 			<div class="col-1-3">
 				<img src="img/instructors-img-one.jpg" alt="">
 			</div>
 			<div class="col-1-3">
-				<p>Our Coaches have 10+ years of coaching background and 15 years personal surfing experience both in New Zealand and overseas.</p>
+				<p>Our Coaches have <b>10+ years of coaching</b> background and <b>15 years personal surfing</b> experience both in New Zealand and overseas.</p>
 			</div>
 			<div class="col-1-3">
 				<img src="img/instructors-img-two.jpg" alt="">
 			</div>
 		</div>
-		<div class="row">
+		<div class="row flex">
 			<div class="col-1-3">
-				<p>Our coaches have a vast knowledge of the local area and will only conduct lessons in surf conditions in waist deep water</p>
+				<p>Our coaches have a <b>vast knowledge of the local area</b> and will only conduct lessons in surf conditions in waist deep water</p>
 			</div>
 			<div class="col-1-3">
 				<img src="img/instructors-img-three.jpg" alt="">
 			</div>
 			<div class="col-1-3">
-				<p>Our coaches have coaching accreditation and APOLA Beach lifeguard certification</p>
+				<p>Our coaches have <b>coaching accreditation</b> and <b>APOLA Beach lifeguard certification</b></p>
 			</div>
 		</div>
 	</div>
@@ -324,10 +330,10 @@ CONTACT
 	<div class="row">
 		<form class="col-1-2">
 			<label for="name">Name</label>
-			<input type="text" name="Name" id="name">
+			<input type="text" name="Name" id="name" placeholder="Name">
 
 			<label for="email">Email</label>
-			<input type="email" name="Email" id="email">
+			<input type="email" name="Email" id="email" placeholder="Email">
 
 			<label for="message">Message</label>
 			<textarea name="Message" id="message" placeholder="Message"></textarea>
@@ -343,20 +349,28 @@ FOOTER
 ============================================================-->
 <footer class="bg-blue">
 	<div class="wrapper row">
-		<ul class="col-1-2">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#packages">Packages</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-		<ul class="col-1-2">
-			<li><a href="tel:+6478257873">+64 7-825 7873</a></li>
-			<li>5B Whaanga Rd,<br>Raglan 3297<br>New Zealand</li>
-		</ul>
+		<nav class="col-2-3">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#packages">Packages</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<address class="col-1-3 row">
+			<div class="col-1-2">
+				<p><a href="tel:+6478257873">+64 7-825 7873</a></p>
+			</div>
+			<div class="col-1-2">
+				<p>5B Whaanga Rd,<br>Raglan 3297<br>New Zealand</p>
+			</div>
+		</address>
 	</div>
 </footer>
-
+<!--===========================================================
+JQUERY SCRIPT
+============================================================-->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
       function initialize() {
